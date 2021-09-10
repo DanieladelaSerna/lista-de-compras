@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Mi lista de compras</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mi lista de compras</h1>
+        <div class="h3">
+            <h3 class="primer-h3">Mi producto</h3>
+            <h3 class="segundo-h3">La cantidad</h3>
+            <h3 class="tercer-h3">Su precio</h3>
+        </div>
+        <input id="input-task" class="producto" type="text" placeholder="Nombre del producto">
+        <input id="input-task2" class="cantidad" type="text" placeholder="0">
+        <h4 class="kilogramos">Kilogramos</h4>
+        <input id="input-task3" class="precio" type="text" placeholder="$00.00">
+        <button class="btn" onclick="addItem()">Agregar elemento</button>
+    </div>
+    <section>
+        <div class="tabla">
+            <h2 class="h2">Nombre del producto</h2>
+            <h2 class="h2">Cantidad</h2>
+            <h2 id ="kilo" class="h2">Precio por kilo</h2>
+            <h2 id="final" class="h2">Precio final</h2>
+        </div>
+    </section>
+    <div id="list">
+
+    </div>
+    <div class="total">
+        <span>Total: $ </span>
+        <span id="total"></span>
+
+    </div>
+    <script src="./main.js"></script>
+    
+
+</body>
+
+</html>
